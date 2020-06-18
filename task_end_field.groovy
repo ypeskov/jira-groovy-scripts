@@ -33,6 +33,6 @@ period = Math.ceil(((Double)period))
 
 def startDate = issue.getCustomFieldValue(startDateField)
 
-date = startDate + (Integer)period
+def date = startDate + (Integer)period
 
 curIssue.setCustomFieldValue(cfTarget, date.toTimestamp())
